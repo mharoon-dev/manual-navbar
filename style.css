@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* open navbar */
+
+.main {
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightgrey;
+} 
+
+div {
+    /* border: 2px solid red; */
+    /* width: 100%; */
+}
+
+.logo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    font-size: x-large;
+    padding-left: 15px;
+}
+
+span {
+    color: rgb(112, 203, 233);
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(99, 99, 99);
+}
+
+.leftSide {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.togglerBtn {
+    width: fit-content;
+    margin-left: auto;
+    display: none;
+}
+
+/* open navbar end */
+
+
+
+/* sider navbar */
+.siderBar {
+    height: 100vh !important;
+    background-color: white;
+    box-shadow: 4px 0px 21px -3px rgba(0,0,0,0.75);
+-webkit-box-shadow: 4px 0px 21px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 0px 21px -3px rgba(0,0,0,0.75);
+}
+.siderBar-logo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+}
+
+.crossBtn {
+    width: 1rem !important;
+}
+
+.webNames div {
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(99, 99, 99) ;
+    
+
+}
+.webNames {
+    margin-bottom: 240px;
+}
+/* sider navbar end */
+
+
+
+
+
+@media (max-width:600px) {
+    .sidebarlogo {
+        padding-top: 0.4rem;
+        font-size: large !important;
+    }
+    .crossBtn {
+        width: 0.8rem !important;
+        /* height:10rem !important; */
+    }
+    
+}
+
+
+@media (max-width:400px) {
+    .sidebarlogo {
+        font-size: small !important;
+        padding-left: 0 !important;
+
+    }
+    .crossBtn {
+        width: 0.5rem !important;
+    }
+}
