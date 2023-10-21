@@ -11,42 +11,47 @@
 </head>
 <body>
     
-    <!-- <div class="main">
+    <div class="container-fluid  d-flex justify-content-around align-items-center main p-1">
 
-        <div class="logo">
+        <div class="col-4 logo">
             <h3>CODING <span> ADDICT </span></h3>
         </div>
-        <div class="webPages">
-            <ul>
+        <div class="col-4 webPages ">
+            <ul class="d-flex justify-content-between align-items-center my-auto">
                 <li>home</li>
                 <li>about</li>
                 <li>project</li>
                 <li>contact</li>
             </ul>
         </div>
-        <div class="leftSide">
-            <img width="40px" src="./images/nav bar/fb.png" alt="facebook">
-            <img width="90px" src="./images/nav bar/twitter.png" alt="twitter">
-            <img width="30px" src="./images/nav bar/linked in.png" alt="linked in">
+        <div class="col-3 leftSide">
+            <img class="ms-3" width="30px" src="./images/nav bar/fb.png" alt="facebook">
+            <img class="ms-3" width="30px" src="./images/nav bar/twitter.png" alt="twitter">
+            <img class="ms-3" width="30px" src="./images/nav bar/linked in.png" alt="linked in">
         </div>
     
-        <div class="togglerBtn">
-            <img src="./images/nav bar/onclick btn.png" width="50rem" alt="">
+        <div class="d-flex justify-content-end align-items-center"  >
+            <button class="togglerBtn" onclick="sideBarHandler()">
+                <img  src="./images/nav bar/onclick btn.png" width="50rem" alt="">
+            </button>
+            <button onclick="sideBarOff()">
+                <img class="offBtn " src="./images/nav bar/onclick btn.png" alt="cross">
+            </button>
         </div>
-    </div> -->
+    </div>  
 
 
 
 
 
-    <div class="container h-100 ms-0 w-50 siderBar d-flex flex-column justify-content-between">
+    <div class="container h-100 ms-0 w-50 siderBar d-flex flex-column align-items-start justify-content-between siderbar">
         <div class="row mb-0">
-            <div class=" col-10 pt-1 d-flex justify-content-between logo">
+            <div class=" col-sm-10 col-9  d-flex justify-content-start align-items-center logo">
             <h3 class="fs-2 sidebarlogo">CODING <span> ADDICT </span></h3>
         </div>
 
-        <div class="col-1 d-flex justify-content-center align-items-center  pe-3">
-                <img class="crossBtn" src="./images/cross.png" alt="cross">
+        <div onclick="sideBarOff()" class="col-1 d-flex justify-content-center align-items-center  pe-3">
+                <img  class="crossBtn" src="./images/cross.png" alt="cross">
             </div>
 
         </div>
